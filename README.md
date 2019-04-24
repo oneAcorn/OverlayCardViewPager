@@ -1,6 +1,4 @@
-# OverlayCardViewPager
-
-<h3>层叠卡片效果的ViewPager</h3>
+# OverlayCardViewPager 层叠卡片效果的ViewPage
 
 ![github](https://github.com/oneAcorn/OverlayCardViewPager/blob/master/20190424_141920.gif)
 
