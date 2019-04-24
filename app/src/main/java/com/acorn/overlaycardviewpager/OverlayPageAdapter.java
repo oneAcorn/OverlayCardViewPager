@@ -33,12 +33,18 @@ public class OverlayPageAdapter extends PagerAdapter {
         inflater = LayoutInflater.from(context);
     }
 
-    public void setImgUrlsAndBindViewPager(ViewPager vp, String[] imgUrls) {
+    /**
+     *
+     * @param vp
+     * @param imgUrls
+     * @param layerAmount 显示层数
+     */
+    public void setImgUrlsAndBindViewPager(ViewPager vp, String[] imgUrls,int layerAmount) {
         this.imgUrls = imgUrls;
         if (imgUrls != null && imgUrls.length > 0) {
             bitmaps = new WeakReference[imgUrls.length];
-            vp.setOffscreenPageLimit(3);
-            OverlayTransformer transformer = new OverlayTransformer(3);
+            vp.setOffscreenPageLimit(layerAmount);
+            OverlayTransformer transformer = new OverlayTransformer(layerAmount);
             vp.setPageTransformer(true, transformer);
         }
     }

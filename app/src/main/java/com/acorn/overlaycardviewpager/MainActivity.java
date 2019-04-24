@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         vp = findViewById(R.id.example_vp);
         OverlayPageAdapter adapter = new OverlayPageAdapter(this);
-        adapter.setImgUrlsAndBindViewPager(vp, imgUrls);
+        adapter.setImgUrlsAndBindViewPager(vp, imgUrls, 3);
         vp.setAdapter(adapter);
-        vp.setCurrentItem(100000);
+        vp.setCurrentItem(100000); //伪无限循环
     }
 }
