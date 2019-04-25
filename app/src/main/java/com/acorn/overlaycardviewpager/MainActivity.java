@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.library.SimpleOverlayAdapter;
+
 public class MainActivity extends AppCompatActivity {
     private ViewPager vp;
     private String[] imgUrls = new String[]{"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556094759217&di=943686daea0415763a8364d3ac0d8233&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fe7abe6079c12527f838195f6b0de9c88bdb0b6cb.jpg"
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         vp = findViewById(R.id.example_vp);
-        OverlayPageAdapter adapter = new OverlayPageAdapter(this);
+        SimpleOverlayAdapter adapter = new SimpleOverlayAdapter(this);
         adapter.setImgUrlsAndBindViewPager(vp, imgUrls, 3);
         vp.setAdapter(adapter);
         vp.setCurrentItem(100000); //伪无限循环

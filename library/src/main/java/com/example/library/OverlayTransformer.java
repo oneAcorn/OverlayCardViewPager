@@ -1,4 +1,4 @@
-package com.acorn.overlaycardviewpager;
+package com.example.library;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -14,6 +14,14 @@ public class OverlayTransformer implements ViewPager.PageTransformer {
 
     public OverlayTransformer(int overlayCount) {
         this.overlayCount = overlayCount;
+    }
+
+    public OverlayTransformer(int overlayCount, float scaleOffset, float transOffset) {
+        this.overlayCount = overlayCount;
+        if (Float.compare(scaleOffset, -1) != 0)
+            this.scaleOffset = scaleOffset;
+        if (Float.compare(transOffset, -1) != 0)
+            this.transOffset = transOffset;
     }
 
     public int getOverlayCount() {

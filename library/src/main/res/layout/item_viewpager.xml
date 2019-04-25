@@ -18,11 +18,10 @@
         app:cardElevation="3dp">
 
         <ImageView
-            android:id="@+id/example_iv"
+            android:id="@+id/card_iv"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             android:scaleType="fitXY"
-            android:src="@mipmap/ic_launcher"
             />
     </android.support.v7.widget.CardView>
 </LinearLayout>
