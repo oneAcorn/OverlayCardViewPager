@@ -1,6 +1,6 @@
 # OverlayCardViewPager 层叠卡片效果的ViewPage
 
-![github](https://github.com/oneAcorn/OverlayCardViewPager/blob/master/20190425_124450.gif)
+![github](https://github.com/oneAcorn/OverlayCardViewPager/blob/master/20190509_220723.gif)
 
 <p>使用PageTransformer实现的层叠卡片效果ViewPager</p>
 
